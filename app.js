@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 import mongoose from 'mongoose';
-const CONNECTION_STRING = 'mongodb+srv://leekent:<KenTL_327!>@ktl1216.zbt8gr6.mongodb.net/?retryWrites=true&w=majority';
+const CONNECTION_STRING = 'mongodb+srv://leekent:<KenTL_327!>@ktl1216.zbt8gr6.mongodb.net/?retryWrites=true&w=majority/tuiter';
 mongoose.connect(CONNECTION_STRING);
 
 import HelloController from "./controllers/hello-controller.js"
