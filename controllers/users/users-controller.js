@@ -4,9 +4,13 @@ let users = people
 
 const UserController = (app) => {
     app.get('/api/users', findUsers)
+
     app.get('/api/users/:uid', findUserById);
+
     app.post('/api/users', createUser);
+
     app.delete('/api/users/:uid', deleteUser);
+
     app.put('/api/users/:uid', updateUser);
 }
 
@@ -47,5 +51,6 @@ const updateUser = (req, res) => {
     );
     res.sendStatus(200);
 }
+
 
 export default UserController
